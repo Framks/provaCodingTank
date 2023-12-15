@@ -5,8 +5,8 @@ public class questao3 {
         Scanner scan = new Scanner(System.in);
         System.out.printf("informe o numero: ");
         int tam = scan.nextInt();
-        int fator = ((tam%2)==0) ? 1 : 2;
-        for(int i = 1;i <= tam;i = i+fator){
+        int init = ((tam%2)==0) ? 2 : 1;
+        for(int i = init;i <= tam;i = i+2){
             int espaco = (tam - i)/2;
             for(int k=1;k<=espaco;k++){
                 System.out.printf(" ");
@@ -19,7 +19,7 @@ public class questao3 {
             }
             System.out.printf("\n");
         }
-        for(int i = tam;i >= 1;i = i-fator){
+        for(int i = tam;i >= init;i = i-2){
             int espaco = (tam - i)/2;
             for(int k=1;k<=espaco;k++){
                 System.out.printf(" ");
